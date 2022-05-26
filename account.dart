@@ -27,6 +27,7 @@ class Account {
       print("Not Sufficient Balance...");
     } else {
       print("The amount withdrawn is $withdraw");
+      print("Your Balance is now $balance");
     }
     return;
   }
