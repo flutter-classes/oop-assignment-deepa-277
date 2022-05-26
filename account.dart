@@ -22,6 +22,7 @@ class Account {
     print("Enter your amount to withdraw...");
     double withdraw = double.parse(stdin.readLineSync()!);
     var balance = this.acBalance - withdraw;
+    this.acBalance = balance;
     if (balance <= 1000) {
       print("Not Sufficient Balance...");
     } else {
@@ -34,6 +35,7 @@ class Account {
     print("Enter the amount you wish to deposite...");
     double amount = double.parse(stdin.readLineSync()!);
     var balance = this.acBalance + amount;
+    this.acBalance = balance;
     print("Succefully Deposited...");
     print("Your Balance is now $balance");
     return;
